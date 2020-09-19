@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react'
 import { getHeroesByPublisher } from '../../selector/getHeroesByPublisher'
 import HeroeCard from './HeroeCard'
+import PropTypes from 'prop-types'
 
 const HeroesList = ({publisher}) => {
 
@@ -15,6 +16,10 @@ const HeroesList = ({publisher}) => {
             }
         </div>
     )
+}
+
+HeroesList.propTypes = {
+    publisher: PropTypes.string.isRequired
 }
 
 export default HeroesList

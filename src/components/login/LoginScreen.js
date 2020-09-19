@@ -12,7 +12,7 @@ const LoginScreen = ({history}) => {
         dispatch({
             type: types.login,
             payload: {
-                name: prompt('What is your name?')
+                name: 'alejor'
             }
         })
         history.replace(lastPath)

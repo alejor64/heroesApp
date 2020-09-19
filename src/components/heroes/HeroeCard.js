@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const HeroeCard = ({id, superhero, alter_ego, first_appearance, characters}) => {
     return (
@@ -29,6 +30,14 @@ const HeroeCard = ({id, superhero, alter_ego, first_appearance, characters}) => 
             </div>
         </div>
     )
+}
+
+HeroeCard.propTypes = {
+    id: PropTypes.string.isRequired,
+    superhero: PropTypes.string.isRequired,
+    alter_ego: PropTypes.string.isRequired,
+    first_appearance: PropTypes.string.isRequired,
+    characters: PropTypes.string.isRequired
 }
 
 export default HeroeCard
