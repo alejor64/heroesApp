@@ -24,6 +24,8 @@ npm install
 yarn
 ```
 
+<Edti />
+
 ## Ejecución del proyecto
 
 La aplicación correrá por defecto en el localhost: 3000. Para eso, debe ejecutar el siguiente comando:
